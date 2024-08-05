@@ -1,3 +1,9 @@
 .segment1 {
-    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+    height: 300px;
+    background-color: purple;
 }
