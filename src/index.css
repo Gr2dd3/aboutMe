@@ -1,4 +1,7 @@
 body {
+  background-image: url('../src/img/white-bgn.jpg'); 
+  background-repeat: none;
+  background-size: cover;
   position: relative;
   min-height: 100vh;
   margin: 0;
