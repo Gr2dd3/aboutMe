@@ -5,7 +5,6 @@
     padding-left: 2vw;
     align-self: flex-start;
     justify-self: flex-start;
-    margin-bottom: -48px;
 }
 
 .homelink-icon {
@@ -83,6 +82,7 @@
 
 .homelink-bottomPage {
     width: 10rem;
+    margin-bottom: 10vh;
 }
 
 

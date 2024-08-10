@@ -8,7 +8,6 @@ export default function AboutMe() {
         <div className="profile-container">
             <img src={portrait} className="profile" alt="profile" />
         </div>
-        <h1>Mattias Gradin</h1>
     </Link>
     )
 }
