@@ -1,21 +1,11 @@
-import { Link } from "react-router-dom";
-import portrait from '../img/Mattias23.jpg';
+import AboutMe from '../components/AboutMe';
+import BudgetLink from '../components/BudgetLink';
 
 export default function StartPage() {
     return (
         <div className="segment-container">
-            <Link className="segment aboutme" to="/ThisIsMe">
-                <div className="profile-container">
-                    <img src={portrait} className="profile" alt="profile" />
-                </div>
-                <h1>Mattias Gradin</h1>
-            </Link>
-            <Link className="segment" to="/ThisIsMe">
-                <div className="profile-container">
-                    <img src={portrait} className="profile" alt="profile" />
-                </div>
-                <h1>Mattias Gradin</h1>
-            </Link>
+            <AboutMe />
+            <BudgetLink />
         </div>
     )
 }
