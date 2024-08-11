@@ -34,9 +34,7 @@ export default function IntroTextSection() {
          <div className="text-container">
                 <h3 className="headline">Hej,</h3>
                 <p className="text">
-                    Jag heter Mattias Gradin och jag tog examen som systemutvecklare i juni 2024. 
-                    Jag hade ett starkt teknikintresse redan när jag gick gymnasiets teknikprogram med inrikting på dator/data 2003-2005. 
-                    Det har suttit i och funnits som ett intresse hela livet. 
+                    Jag heter Mattias Gradin och jag tog examen som systemutvecklare i juni 2024.
                 </p>
                 <p className="text">
                     Jag älskar problemlösningen som backend erbjuder och jag utvecklar mig gärna i nya spännande språk!
