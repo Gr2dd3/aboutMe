@@ -76,11 +76,11 @@ export default function IntroTextSection() {
 
 
 
-            <iframe title="pdf-resume" className="pdf-viewer" type="application/pdf" src={resume}>
+            <iframe title="pdf-resume" className="pdf-viewer" type="application/pdf" src={`${resume}#zoom=80`}>
                 <a href={resume}>Download the PDF</a>
             </iframe>
 
-            <iframe title="pdf-grades" className="pdf-viewer" type="application/pdf" src={grades}>
+            <iframe title="pdf-grades" className="pdf-viewer" type="application/pdf" src={`${grades}#zoom=25`}>
                 <a href={grades}>Download the PDF</a>
             </iframe><br />
         </>

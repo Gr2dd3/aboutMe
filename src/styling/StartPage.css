@@ -56,10 +56,10 @@ a {
     height: 100%;
 }
 
-/* .budgetSegment {
-    background: rgb(68,68,68);
-    background: linear-gradient(128deg, rgba(68,68,68,1) 0%, rgba(124,124,124,1) 4%, rgba(230,230,230,1) 11%, rgba(255,255,255,1) 100%);
-} */
+.budgetSegment {
+    background: rgb(255,234,136);
+    background: linear-gradient(128deg, rgba(255,234,136,0.9640231092436975) 0%, rgba(255,240,197,1) 14%, rgba(255,243,204,1) 27%, rgba(255,253,243,1) 36%, rgba(255,255,255,1) 46%);
+} 
 
 .recipeSegment {
     background: rgb(19,71,0);

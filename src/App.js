@@ -10,6 +10,8 @@ import './styling/StartPage.css';
 import './styling/ThisIsMe.css';
 import './styling/Budget.css';
 import './styling/ScrollToTop.css';
+import './styling/game.css';
+
 
 
 function App() {

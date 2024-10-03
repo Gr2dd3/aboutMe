@@ -1,8 +1,5 @@
-
-
 export default function Budget() {
     const source = "http://localhost:5173/"
-
 
     return (
         <iframe
