@@ -422,3 +422,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 >>>>>>> master
+# Ignore all .pck files in the public directory
+public/*.pck
