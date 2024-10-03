@@ -16,6 +16,17 @@
     text-align: center;
 }
 
+.game-description-box {
+  border-top: 3px solid darkslateblue;
+  border-bottom: 3px solid darkslateblue;
+  margin: 8vh 0 2vh 0;
+}
+
+.info {
+  font-weight: 400;
+  font-size: medium;
+}
+
 .game-start-button {
     margin-top: 5vh;
     background-color: #3DD1E7;
@@ -66,5 +77,20 @@
         .game-start-button {
         padding: .75rem 3rem;
         font-size: 1.25rem;
+      }
+    }
+    @media (min-width: 1900px) {
+      .game-start-button {
+        margin-left: 1vw;
+      }
+    }
+    @media (min-width: 2000px) {
+      .game-start-button {
+        margin-left: 2vw;
+      }
+    }
+    @media (min-width: 2300px) {
+      .game-start-button {
+        margin-left: 3vw;
       }
     }
