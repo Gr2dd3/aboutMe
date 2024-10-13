@@ -15,13 +15,12 @@ const ContactForm = () => {
     };
   
     const emailData = {
-      toEmail: "gradde23@gmail.com",
       subject: "Nytt meddelande från kontaktformulär",
       body: `Namn: ${formData.name}, E-post: ${formData.email}, Meddelande: ${formData.message}`
-    };
+    };    
   
     try {
-      const response = await fetch('https://myapi-bubycqeyg2awapd6.northeurope-01.azurewebsites.net/api/Email/send', {
+      const response = await fetch('/api/Email/send', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
