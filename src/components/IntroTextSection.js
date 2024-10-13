@@ -1,17 +1,9 @@
 import linkedinImage from '../img/linkedin.png';
 import githubImage from '../img/github.png';
-import CV from '../documents/Mattias_Gradin_-_CV.pdf';
-import coverletter from '../documents/Mattias_Gradin_-_Cover_Letter.pdf';
-import degree from '../documents/Examensbevis 2024.pdf';
-import ratings from '../documents/Betyg 2024.pdf';
-import kvalification1 from '../documents/Kvalifikationstillagg EN 2024 1_2.pdf';
-import kvalification2 from '../documents/Kvalifikationstillagg EN 2024 2_2.pdf';
 import ContactForm from '../components/ContactMe.js';
 
 
 export default function IntroTextSection() {
-    const docs = [CV, coverletter, degree, ratings, kvalification1, kvalification2]
-    const names = ["CV", "Personligt Brev", "Examensbevis", "Betyg", "Kvalifikationstillägg 1/2", "Kvalifikationstillägg 1/2"]
 
     return (
         <>

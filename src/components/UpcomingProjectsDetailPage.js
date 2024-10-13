@@ -3,7 +3,6 @@ import { useParams, useLocation, Link } from 'react-router-dom';
 import UpcomingIcon from '../img/upcoming-events.png';
 
 const DetailPage = () => {
-    const { id } = useParams(); // Hämta id från URL
     const location = useLocation(); // Hämta URL och query params
 
     const queryParams = new URLSearchParams(location.search);
