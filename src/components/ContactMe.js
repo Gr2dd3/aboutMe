@@ -56,7 +56,6 @@ Genom att använda detta kontaktformulär kan du enkelt skicka en förfrågan so
 Eftersom jag värnar om min personliga integritet, lägger jag inte ut mina privata dokument direkt online.
 <span className="tilt">  Vid intresse skickar jag dem istället direkt till dig via e-post.</span> </p>
 
-
 <p> Fyll i formuläret för att ta kontakt:</p>
 
 <p> Namn och e-post är obligatoriska fält för att jag ska kunna svara dig.
