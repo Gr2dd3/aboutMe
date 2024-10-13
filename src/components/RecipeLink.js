@@ -7,7 +7,10 @@ export default function RecipeLink() {
         <Link className="segment recipeSegment" to="/Recipe">
             <div className="icon-container">
                 <img src={recipeBook} className="budget-icon" alt="budget" />
-            </div> 
+            </div>
+            <div className="segment-text-container">
+                <h3>Made in .Net MAUI</h3>
+            </div>
         </Link>
     )
 }

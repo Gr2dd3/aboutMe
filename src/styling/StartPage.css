@@ -14,6 +14,14 @@
     height: 300px;
 }
 
+.segment-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
 .home {
     display: flex;
     flex-direction: row;
@@ -40,6 +48,11 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.intro {
+    background: rgb(13,80,44);
+background: linear-gradient(148deg, rgba(13,80,44,0.9500175070028011) 0%, rgba(29,105,64,1) 16%, rgba(43,131,83,1) 33%, rgba(59,168,108,1) 44%, rgba(85,198,136,1) 58%, rgba(105,217,156,1) 76%);
 }
 
 .aboutme {
@@ -76,6 +89,12 @@ a {
     background: linear-gradient(128deg, rgba(19,71,0,1) 0%, rgba(131,0,0,1) 11%, rgba(227,0,0,1) 56%, rgba(253,50,0,1) 100%);
 }
 
+.upcomingProjectsSegment {
+    background: rgb(184,0,193);
+    background: linear-gradient(128deg, rgba(184,0,193,0.9640231092436975) 0%, rgba(246,57,255,1) 26%, rgba(249,113,255,1) 43%, rgba(251,172,255,1) 64%, rgba(252,214,254,1) 75%);
+}
+
+
 @media (min-width: 768px) {
     .segment {
         max-width: 85vw;
@@ -83,6 +102,9 @@ a {
         border-left: 1px solid black;
         border-right: 1px solid black;
         border-bottom: 1px solid black;
+    }
+    .segment-text-container {
+        width: 75%;
     }
 }
 
@@ -93,5 +115,8 @@ a {
         border-left: 1px solid black;
         border-bottom: 1px solid black;
         border-right: 1px solid black;
+    }
+    .segment-text-container {
+        width: 65%;
     }
 }

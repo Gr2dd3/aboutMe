@@ -6,11 +6,15 @@ import Budget from './pages/Budget';
 import Recipe from './pages/Recipe';
 import Game from './pages/Game';
 import Forum from './pages/Forum';
+import UpcomingProjects from './pages/UpcomingProjects';
+import UpcomingProjectsDetailPage from './components/UpcomingProjectsDetailPage';
 import './styling/StartPage.css';
 import './styling/ThisIsMe.css';
 import './styling/Budget.css';
 import './styling/ScrollToTop.css';
 import './styling/game.css';
+import './styling/ContactMe.css';
+import './styling/UpcomingProjects.css';
 
 
 
@@ -26,6 +30,8 @@ function App() {
             <Route path="/Recipe" element={<Recipe />} />
             <Route path="/Game" element={<Game />} />
             <Route path="/Forum" element={<Forum />} />
+            <Route path="/UpcomingProjects" element={<UpcomingProjects />} />
+            <Route path="/UpcomingProjects/:id" element={<UpcomingProjectsDetailPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

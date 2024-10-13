@@ -1,34 +1,18 @@
 import linkedinImage from '../img/linkedin.png';
 import githubImage from '../img/github.png';
-import resume from '../documents/Mattias_Gradin_-_resume.pdf';
-import grades from '../documents/Mattias_Gradin_-_grades.pdf';
 import CV from '../documents/Mattias_Gradin_-_CV.pdf';
 import coverletter from '../documents/Mattias_Gradin_-_Cover_Letter.pdf';
 import degree from '../documents/Examensbevis 2024.pdf';
 import ratings from '../documents/Betyg 2024.pdf';
 import kvalification1 from '../documents/Kvalifikationstillagg EN 2024 1_2.pdf';
 import kvalification2 from '../documents/Kvalifikationstillagg EN 2024 2_2.pdf';
-import cvIcon from '../img/cv_icon.png';
-import gradesIcon from '../img/grades_icon.png';
+import ContactForm from '../components/ContactMe.js';
 
 
 export default function IntroTextSection() {
     const docs = [CV, coverletter, degree, ratings, kvalification1, kvalification2]
     const names = ["CV", "Personligt Brev", "Examensbevis", "Betyg", "Kvalifikationstillägg 1/2", "Kvalifikationstillägg 1/2"]
-    const displayLinks = docs.map(function(doc, index) {
-        let icon = "";
-            if (index === 0 || index === 1){
-                icon = <img className="downloadPDF-icon" alt="icon" src={cvIcon} />
-            }
-            else {
-                icon = <img className="downloadPDF-icon" alt="icon" src={gradesIcon} />
-            }
-            return (
-                <a className="downloadable" target="_blank" rel="noreferrer" download= {doc} href={doc}>
-                    {icon}
-                    <h3 className="downloadName">{names[index]}</h3>
-                    </a>)
-    })
+
     return (
         <>
          <div className="text-container">
@@ -62,6 +46,9 @@ export default function IntroTextSection() {
                 <p className="text">
                     Mvh Mattias 
                 </p>
+                <div className="contactform">
+                <ContactForm />
+                </div>
                 <div className="socialLink-container">
                     <a className="link" href="http://www.linkedin.com/in/mattias-gradin-879b50249">
                         <img className="linkedInIcon" src={linkedinImage} alt="Mattias linkedin link" />
@@ -70,19 +57,10 @@ export default function IntroTextSection() {
                         <img className="githubIcon" src={githubImage} alt="Mattias Github link" />
                     </a>
                 </div>
-
-            <div className="downloadLinks-container">{displayLinks}</div>
             </div>
-
-
-
-            <iframe title="pdf-resume" className="pdf-viewer" type="application/pdf" src={`${resume}#zoom=80`}>
-                <a href={resume}>Download the PDF</a>
-            </iframe>
-
-            <iframe title="pdf-grades" className="pdf-viewer" type="application/pdf" src={`${grades}#zoom=25`}>
-                <a href={grades}>Download the PDF</a>
-            </iframe><br />
         </>
     )
 }
+
+
+

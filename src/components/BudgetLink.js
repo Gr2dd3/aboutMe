@@ -7,6 +7,9 @@ export default function BudgetLink() {
             <div className="icon-container">
                 <img src={budgetIcon} className="budget-icon" alt="budget" />
             </div>
+            <div className="segment-text-container">
+                <h3>Budget App! Gjord i Svelte, mobile first, med ett RESTApi i backend</h3>
+            </div>
         </Link>
     )
 }

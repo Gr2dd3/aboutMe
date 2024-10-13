@@ -7,6 +7,9 @@ export default function GameLink() {
             <div className="icon-container">
                 <img src={forumIcon} className="profile" alt="profile" />
             </div>
+            <div className="segment-text-container">
+                <h3>Gjord i Razor Pages</h3>
+            </div>
         </Link>
     )
 }

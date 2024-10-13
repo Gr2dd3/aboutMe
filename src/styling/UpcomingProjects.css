@@ -1,0 +1,108 @@
+
+.upcoming-projects-headline {
+    color: #FFD700; /* Stark gul färg */
+    font-size: 2.5rem; /* Större textstorlek */
+    transform: rotate(-1deg); /* Lite rotation för lekfullhet */
+    margin: 2vh 3vw 2vh 2vw;
+}
+
+.upcoming-segment ul {
+    margin: 0;
+    padding: 0;
+}
+.project-details-background {
+    background: linear-gradient(132deg, rgb(3, 148, 108) 0.00%, rgb(33, 35, 34) 100.00%);
+    color: #fff;
+}
+.project-item {
+    background: linear-gradient(132deg, rgb(3, 148, 108) 0.00%, rgb(33, 35, 34) 100.00%);
+    border-radius: 10px;
+    padding: 0 0 15px 5px; /* Justera vart allt befinner sig i project-item */
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative; /* För att placera effekter */
+    overflow: hidden; /* Döljer overflow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Mörkare skugga för projekt */
+}
+
+.project-item:hover {
+    transform: scale(1.05); /* Förstorar vid hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Lägger till mer skugga vid hover */
+}
+
+.project-content {
+    position: relative;
+    z-index: 1; /* Placera innehåll ovanpå effekter */
+}
+
+.project-name {
+    font-weight: bold;
+    font-size: 1.5rem; /* Större text */
+    color: #FFFFFF; /* Vit färg för text */
+    letter-spacing: 1px; /* Mellanrum mellan bokstäver */
+    text-shadow: 1px 1px 3px rgba(255, 255, 0, 0.7); /* Gul skugga för namn */
+}
+
+.project-description {
+    color: #FFFFFF; /* Vit färg för beskrivning */
+    font-size: 1rem; /* Normal storlek */
+    margin-top: 5px; /* Utrymme ovanför beskrivning */
+}
+
+/* Stil för knappar */
+.project-button {
+    background: linear-gradient(132deg, rgb(146, 11, 126) 0.00%, rgb(52, 29, 49) 100.00%);
+    color: #FFD700; /* Vit textfärg */
+    border: none; /* Ingen kant */
+    border-radius: 5px;
+    padding: 0.5rem 1rem; /* Utrymme inne i knappen */
+    font-weight: 700; /* Fet stil */
+    cursor: pointer; /* Handvisare */
+    transform: rotate(-2deg); /* Lite rotation */
+    transition: all 0.3s; /* Mjuka övergångar */
+    text-align: center; /* Centrera texten */
+}
+
+.project-button:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Lägger till skugga vid hover */
+    background-color: #FF6347; /* Tomatfärg vid hover */
+}
+
+.upcoming-segment-container {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .project-item {
+        margin: 1vh 4vw 1vh 3vw;
+    }
+    .upcoming-projects-headline {
+        margin: 2vh 4vw 2vh 2vw;
+    }
+    .upcoming-projects-headline {
+        margin: 3vh 20vw 0 15vw;
+    }
+    .upcoming-segment ul {
+        margin: 0 15vw 0 10vw;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .project-item {
+        margin: 2vh 7vw 2vh 5vw;
+    }
+    .upcoming-projects-headline {
+        margin: 5vh 4vw 2vh 2vw;
+    }
+    .upcoming-projects-headline {
+        margin: 3vh 30vw 0 20vw;
+    }
+    .upcoming-segment ul {
+        margin: 0 20vw 0 15vw;
+        padding: 0;
+    }
+}

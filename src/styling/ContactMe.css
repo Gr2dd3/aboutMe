@@ -1,0 +1,109 @@
+
+  form {
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 6vh 8vw 0 6vw;
+  }
+  
+  /* Form Title */
+  form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #4A90E2;
+    text-align: center;
+  }
+  .fat {
+    font-weight: 600;
+  }
+  .tilt {
+    font-style: italic;
+  }
+  /* Form Fields */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #4A90E2;
+    outline: none;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  /* Optional Field (Phone Number) */
+  input[name="phone"] {
+    border: 1px solid #EAEAEA;
+  }
+  
+  input[name="phone"]:focus {
+    border-color: #FF8800;
+    box-shadow: 0 0 5px rgba(255, 136, 0, 0.5);
+  }
+  
+  /* Submit Button */
+  button {
+    background-color: #4A90E2;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #357ABD;
+  }
+  
+  /* Success/Error Message */
+  .alert {
+    margin-top: 15px;
+    font-size: 14px;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .alert-success {
+    background-color: #28A745;
+  }
+  
+  .alert-error {
+    background-color: #DC3545;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    form {
+      padding: 15px;
+    }
+  
+    button {
+      width: 100%;
+      padding: 12px;
+    }
+  }
+  

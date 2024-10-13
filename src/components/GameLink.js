@@ -7,6 +7,9 @@ export default function GameLink() {
             <div className="icon-container">
                 <img src={gameIcon} className="profile" alt="profile" />
             </div>
+            <div className="segment-text-container">
+                <h3>MAZERUNNER! Gjord med Godot Engine, är även mobilanpassad</h3>
+            </div>
         </Link>
     )
 }

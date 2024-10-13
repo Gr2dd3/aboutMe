@@ -1,5 +1,5 @@
 export default function Budget() {
-    const source = "http://localhost:5173/"
+    const source = "https://ambitious-dune-07093cb1e.5.azurestaticapps.net/"
 
     return (
         <iframe
