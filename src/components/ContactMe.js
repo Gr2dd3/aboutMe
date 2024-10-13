@@ -21,7 +21,7 @@ const ContactForm = () => {
     };
   
     try {
-      const response = await fetch('https://localhost:7083/api/Email/send', {
+      const response = await fetch('https://myapi-bubycqeyg2awapd6.northeurope-01.azurewebsites.net/api/Email/send', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
