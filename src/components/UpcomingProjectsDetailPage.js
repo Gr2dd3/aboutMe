@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, useLocation, Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import UpcomingIcon from '../img/upcoming-events.png';
 
 const DetailPage = () => {
