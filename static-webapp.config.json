@@ -1,9 +1,17 @@
 {
-    "routes": [
-      {
-        "route": "/api/*",
-        "rewrite": "https://myapi-bubycqeyg2awapd6.northeurope-01.azurewebsites.net/api/*"
-      }
-    ]
+  "routes": [
+    {
+      "route": "/api/*",
+      "rewrite": "https://myapi-bubycqeyg2awapd6.northeurope-01.azurewebsites.net/api/*"
+    },
+    {
+      "route": "/MazeRunner/*",
+      "serve": "/MazeRunner.html"
+    }
+  ],
+  "mimeTypes": {
+    ".pck": "application/octet-stream",
+    ".wasm": "application/wasm"
   }
+}
   
