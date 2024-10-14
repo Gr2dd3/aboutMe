@@ -29,6 +29,7 @@ export default function Routing() {
             <Route path="/Forum" element={<Forum />} />
             <Route path="/UpcomingProjects" element={<UpcomingProjects />} />
             <Route path="/UpcomingProjects/:id" element={<UpcomingProjectsDetailPage />} />
+            <Route path="*" element={<NotFoundPage />} />
         </Route>
         </Routes>
         </BrowserRouter>
