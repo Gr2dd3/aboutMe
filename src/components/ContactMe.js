@@ -17,7 +17,7 @@ const ContactForm = () => {
     };
 
     const emailData = {
-      subject: "Nytt meddelande från kontaktformulär",
+      subject: "Nytt meddelande från mywebpage kontaktformulär",
       body: `Namn: ${formData.name}, E-post: ${formData.email}, Telefonnummer: ${formData.phone}, Meddelande: ${formData.message}`
     };
 

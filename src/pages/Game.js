@@ -3,8 +3,9 @@ import gameIcon from '../img/MazeRunner_Labyrinth.png';
 
 const GameComponent = () => {
 
+  const mazeRunnerHTMLUrl = "https://mazerunner.blob.core.windows.net/mazerunner-container/MazeRunner-folder/gamefolder/MazeRunner.html";
   const openGameInNewWindow = () => {
-    const gameWindow = window.open('/MazeRunner.html', '_blank');
+    const gameWindow = window.open(mazeRunnerHTMLUrl, '_blank');
     if (!gameWindow) {
       alert('Tillåt popup-fönster för att starta spelet.');
     }
