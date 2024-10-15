@@ -8,14 +8,16 @@ import IntroToPage from '../components/IntroToPage';
 
 export default function StartPage() {
     return (
-        <div className="segment-container">
+        <>
             <IntroToPage />
-            <AboutMe />
-            <BudgetLink />
-            {/* <RecipeLink /> */}
-            <GameLink />
-            {/*<ForumLink />*/}
-            <UpcomingProjects />
+            <div className="segment-container">
+                <AboutMe />
+                <BudgetLink />
+                {/* <RecipeLink /> */}
+                <GameLink />
+                {/*<ForumLink />*/}
+                <UpcomingProjects />
         </div>
+        </>
     )
 }

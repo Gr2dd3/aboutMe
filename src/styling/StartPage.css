@@ -1,8 +1,9 @@
 .segment-container {
-    display: block;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap; /* Gör att segmenten kan brytas till två kolumner */
 }
 
 .segment {
@@ -10,8 +11,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 100vw;
+    width: 100%; /* För mobilvyer */
     height: 300px;
+    box-sizing: border-box; /* Viktigt för korrekt border-beräkning */
 }
 
 .segment-text-container {
@@ -52,7 +54,8 @@ a {
 
 .intro {
     background: rgb(13,80,44);
-background: linear-gradient(148deg, rgba(13,80,44,0.9500175070028011) 0%, rgba(29,105,64,1) 16%, rgba(43,131,83,1) 33%, rgba(59,168,108,1) 44%, rgba(85,198,136,1) 58%, rgba(105,217,156,1) 76%);
+    background: linear-gradient(148deg, rgba(13,80,44,0.9500175070028011) 0%, rgba(29,105,64,1) 16%, rgba(43,131,83,1) 33%, rgba(59,168,108,1) 44%, rgba(85,198,136,1) 58%, rgba(105,217,156,1) 76%);
+    width: 100%; /* Helbredd */
 }
 
 .aboutme {
@@ -94,29 +97,42 @@ background: linear-gradient(148deg, rgba(13,80,44,0.9500175070028011) 0%, rgba(2
     background: linear-gradient(128deg, rgba(184,0,193,0.9640231092436975) 0%, rgba(246,57,255,1) 26%, rgba(249,113,255,1) 43%, rgba(251,172,255,1) 64%, rgba(252,214,254,1) 75%);
 }
 
-
+/* Media queries för större skärmar */
 @media (min-width: 768px) {
-    .segment {
-        max-width: 85vw;
-        margin-left: 6vw;
-        border-left: 1px solid black;
-        border-right: 1px solid black;
-        border-bottom: 1px solid black;
+    .segment-container {
+        flex-direction: row;
+        flex-wrap: wrap; /* Bryt segmenten till två kolumner */
     }
+
+    .segment {
+        width: 48%; /* Ta upp halva bredden */
+        margin: 1%; /* Liten marginal för avstånd mellan kolumnerna */
+        height: 300px;
+        flex-direction: row;
+    }
+
     .segment-text-container {
         width: 75%;
+    }
+
+    .intro {
+        margin: 0;
+        width: 100%; /* Intro har helbredd */
+        margin-bottom: 20px;
     }
 }
 
 @media (min-width: 1024px) {
     .segment {
-        max-width: 60vw;
-        margin-left: 15vw;
-        border-left: 1px solid black;
-        border-bottom: 1px solid black;
-        border-right: 1px solid black;
+        width: 45%; /* Något mindre bredd för stora skärmar */
+        height: 350px;
     }
+
     .segment-text-container {
         width: 65%;
+    }
+
+    .intro {
+        width: 100%; /* Fortfarande helbredd för större skärmar */
     }
 }
