@@ -11,7 +11,7 @@ const DetailPage = () => {
 
     return (
         <Link className="segment-container" to="/UpcomingProjects">
-            <div className="segment upcomingProjectsSegment">
+            <div className="segment upcomingProjectsSegment-inpage">
                 <div className="icon-container">
                     <img src={UpcomingIcon} className="profile" alt="profile" />
                 </div>

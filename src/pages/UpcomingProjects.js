@@ -10,7 +10,7 @@ const UpcomingProjects = () => {
 
     return (
         <div>
-            <div className="segment upcomingProjectsSegment">
+            <div className="segment upcomingProjectsSegment-inpage">
             <HomeLink />
                 <div className="icon-container">
                     <img src={UpcomingIcon} className="profile" alt="profile" />

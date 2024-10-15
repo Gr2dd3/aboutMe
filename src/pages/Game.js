@@ -13,7 +13,7 @@ const GameComponent = () => {
 
   return (
     <div>
-      <div className="segment gameSegment">
+      <div className="segment gameSegment-inpage">
       <div className="profile-container">
                 <img src={gameIcon} className="profile" alt="profile" />
             </div>

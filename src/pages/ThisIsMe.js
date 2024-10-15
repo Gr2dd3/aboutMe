@@ -8,7 +8,7 @@ import HomeLink from "../components/HomeLink.js";
 export default function ThisIsMe() {
     return (
         <div className="segment-container">
-            <div className="segment aboutme" to="/ThisIsMe">
+            <div className="segment aboutme-segment" to="/ThisIsMe">
             <HomeLink />
                 <div className="profile-container">
                     <img src={portrait} className="profile" alt="profile" />
@@ -17,9 +17,6 @@ export default function ThisIsMe() {
             </div>
             <IntroTextSection />
             <div className="homeLink-bottomPage-container">
-            <Link className="homelink-bottomPage" to="/">
-                    <img className="homelink-icon" src={homeIcon} alt="homebutton" />
-                </Link>
             <ScrollToTop />
             </div>
         </div>
