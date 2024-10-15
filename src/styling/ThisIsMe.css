@@ -76,7 +76,9 @@
         margin-left: 6vw;
     }
     .homelink {
-        display: none;
+        position: absolute;
+        top: 2vh;
+        left: 2vw;
     }
 }
 
@@ -87,6 +89,8 @@
         margin-left: 15vw;
     }
     .homelink {
-        display: none;
+        position: absolute;
+        top: 2vh;
+        left: 2vw;
     }
 }
