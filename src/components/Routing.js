@@ -18,7 +18,7 @@ import '../styling/UpcomingProjects.css';
 
 export default function Routing() {
     return (<>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Routes>
                 <Route element={<Layout />}>
                     <Route path="/" element={<StartPage />} />
