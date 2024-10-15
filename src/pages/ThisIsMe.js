@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
 import portrait from '../img/Självporträtt1.jpg';
-import homeIcon from '../img/216242_home_icon.svg';
 import IntroTextSection from "../components/IntroTextSection.js";
 import ScrollToTop from '../components/ScrollToTop.js';
 import HomeLink from "../components/HomeLink.js";
