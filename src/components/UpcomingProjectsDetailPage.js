@@ -10,13 +10,13 @@ const DetailPage = () => {
     const description = queryParams.get('description');
 
     return (
-        <Link className="segment-container" to="/UpcomingProjects">
+        <Link className="" to="/UpcomingProjects">
             <div className="segment upcomingProjectsSegment-inpage">
                 <div className="icon-container">
                     <img src={UpcomingIcon} className="profile" alt="profile" />
                 </div>
             </div>
-            <div className="segment project-details-background">
+            <div className="segment-upcoming project-details-background">
                 {name ? (
                     <>
                         <h1>{name}</h1>

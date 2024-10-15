@@ -120,80 +120,61 @@ a {
 /* Media queries för större skärmar */
 @media (min-width: 768px) {
     .segment-container {
-        flex-direction: row;
-        flex-wrap: wrap; /* Bryt segmenten till två kolumner */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Skapar två kolumner med lika breda kort */
+        /*grid-gap: 10px; /* Ger mellanrum mellan korten */
     }
 
     .segment {
-        width: 48%; /* Ta upp halva bredden */
-        margin: 1%; /* Liten marginal för avstånd mellan kolumnerna */
         height: 300px;
-        flex-direction: row;
     }
 
     .segment-text-container {
-        width: 75%;
+        width: 100%; /* Fyller segmentets bredd */
     }
 
     .intro {
-        margin: 0;
-        width: 100%; /* Intro har helbredd */
-        margin-bottom: 20px;
+        grid-column: 1 / -1; /* Tar upp hela bredden (helbredd) */
+        z-index: 1;
     }
-    .upcomingProjectsSegment-inpage {
-        margin: 0;
-        width: 100%;
-    }
-    .forumSegment-inpage {
-        margin: 0;
-        width: 100vw;
-    }
-    .gameSegment-inpage {
-        margin: 0;
-        width: 100vw;
-    }
-    .budgetSegment-inpage {
-        margin: 0;
-        width: 100vw;
-    }
+
+    .upcomingProjectsSegment-inpage,
+    .forumSegment-inpage,
+    .gameSegment-inpage,
+    .budgetSegment-inpage,
     .aboutme-segment {
+        grid-column: 1 / -1; /* Tar upp hela bredden i grid */
+        width: 100%;
         margin: 0;
-        width: 100vw;
     }
 }
 
 @media (min-width: 1024px) {
+    .segment-container {
+        grid-template-columns: repeat(2, 1fr); /* Behåller två kolumner även för större skärmar */
+        /*grid-gap: 20px; /* Ökar mellanrum mellan korten */
+    }
+
     .segment {
-        width: 45%; /* Något mindre bredd för stora skärmar */
         height: 350px;
     }
 
     .segment-text-container {
-        width: 65%;
+        width: 100%; /* Fyller segmentets bredd */
     }
 
     .intro {
-        width: 100%; /* Fortfarande helbredd för större skärmar */
+        grid-column: 1 / -1; /* Fortsätter att ta upp helbredd */
+        z-index: 1;
     }
 
-    .upcomingProjectsSegment-inpage {
-        margin: 0;
-        width: 100%;
-    }
-    .forumSegment-inpage {
-        margin: 0;
-        width: 100vw;
-    }
-    .gameSegment-inpage {
-        margin: 0;
-        width: 100vw;
-    }
-    .budgetSegment-inpage {
-        margin: 0;
-        width: 100vw;
-    }
+    .upcomingProjectsSegment-inpage,
+    .forumSegment-inpage,
+    .gameSegment-inpage,
+    .budgetSegment-inpage,
     .aboutme-segment {
+        grid-column: 1 / -1; /* Tar upp helbredd i grid */
+        width: 100%;
         margin: 0;
-        width: 100vw;
     }
 }

@@ -1,4 +1,15 @@
 
+.segment-upcoming {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* För mobilvyer */
+    height: 300px;
+    box-sizing: border-box; /* Viktigt för korrekt border-beräkning */
+}
+
+
 .upcoming-projects-headline {
     color: #FFD700; /* Stark gul färg */
     font-size: 2.5rem; /* Större textstorlek */
@@ -89,6 +100,13 @@
         margin: 0 15vw 0 10vw;
         padding: 0;
     }
+    .project-details-background {
+        width: 100%;
+    }
+    .segment-upcoming {
+        width: 100%;
+        height: 400px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -104,5 +122,9 @@
     .upcoming-segment ul {
         margin: 0 20vw 0 15vw;
         padding: 0;
+    }
+    .segment-upcoming {
+        width: 100%;
+        height: 400px;
     }
 }

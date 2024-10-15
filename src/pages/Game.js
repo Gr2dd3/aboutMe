@@ -14,23 +14,23 @@ const GameComponent = () => {
   return (
     <div>
       <div className="segment gameSegment-inpage">
-      <div className="profile-container">
-                <img src={gameIcon} className="profile" alt="profile" />
-            </div>
+        <div className="profile-container">
+                  <img src={gameIcon} className="profile" alt="profile" />
+        </div>
       </div>
       <div className="text-container">
-        <div className="text text-center">
+        <div className="text-center">
           <h1 className="game-text">Welcome to MAZE RUNNER!</h1>
           <p className="game-text">Detta är ett labyrint-spel jag skapat med Godot Engine. Här är gränserna 
             oändliga för vad man kan använda det till. Här kommer några exempel: 3D-modellering, 
             digitala tvillingar, testa fysik, läroplattformar och utbildningsverktyg, visualisering, 
             spel och mycket mer!</p>
-            <div className="game-description-box">
-          <p className="game-text">Grab the key - Unlock the door</p>
-          <p className="game-text">Get to the finish line</p>
-          <p className="game-text">Watch out for traps, hidden or not!</p>
-          <p className="game-text">Q - Controls</p>
-        </div>
+          <div className="game-description-box">
+            <p className="game-text">Grab the key - Unlock the door</p>
+            <p className="game-text">Get to the finish line</p>
+            <p className="game-text">Watch out for traps, hidden or not!</p>
+            <p className="game-text">Q - Controls</p>
+          </div>
           <p className="game-text info">Klicka på knappen nedan för att starta spelet i ett nytt fönster.</p>
           <button className="game-start-button" onClick={openGameInNewWindow}>Starta Spelet</button>
         </div>

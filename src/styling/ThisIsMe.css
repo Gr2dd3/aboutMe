@@ -74,23 +74,31 @@
     .text-container {
         max-width: 85vw;
         margin-left: 6vw;
+        border: none;
     }
     .homelink {
         position: absolute;
         top: 2vh;
         left: 2vw;
+    }
+    .text {
+        width: 65vw;
     }
 }
 
 @media (min-width: 1024px) {
 
     .text-container {
-        max-width: 60vw;
+        max-width: 80vw;
         margin-left: 15vw;
+        border: none;
     }
     .homelink {
         position: absolute;
         top: 2vh;
         left: 2vw;
+    }
+    .text {
+        width: 60vw;
     }
 }
