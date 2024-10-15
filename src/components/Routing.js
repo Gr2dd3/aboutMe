@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes} from 'react-router-dom';
 import StartPage from '../pages/StartPage';
 import Layout from '../components/Layout';
 import ThisIsMe from '../pages/ThisIsMe';
@@ -18,20 +18,20 @@ import '../styling/UpcomingProjects.css';
 
 export default function Routing() {
     return (<>
-        <BrowserRouter>
-        <Routes>
-        <Route element={<Layout />}>
-            <Route path="/" element={<StartPage />} />
-            <Route path="/ThisIsMe" element={<ThisIsMe />} />
-            <Route path="/Budget" element={<Budget />} />
-            <Route path="/Recipe" element={<Recipe />} />
-            <Route path="/Game" element={<Game />} />
-            <Route path="/Forum" element={<Forum />} />
-            <Route path="/UpcomingProjects" element={<UpcomingProjects />} />
-            <Route path="/UpcomingProjects/:id" element={<UpcomingProjectsDetailPage />} />
-            <Route path="*" element={<NotFoundPage />} />
-        </Route>
-        </Routes>
-        </BrowserRouter>
+        <Router>
+            <Routes>
+                <Route element={<Layout />}>
+                    <Route path="/" element={<StartPage />} />
+                    <Route path="/ThisIsMe" element={<ThisIsMe />} />
+                    <Route path="/Budget" element={<Budget />} />
+                    <Route path="/Recipe" element={<Recipe />} />
+                    <Route path="/Game" element={<Game />} />
+                    <Route path="/Forum" element={<Forum />} />
+                    <Route path="/UpcomingProjects" element={<UpcomingProjects />} />
+                    <Route path="/UpcomingProjects/:id" element={<UpcomingProjectsDetailPage />} />
+                    <Route path="*" element={<StartPage />} />
+                </Route>
+            </Routes>
+        </Router>
     </>)
 }
