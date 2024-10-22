@@ -424,3 +424,4 @@ yarn-error.log*
 >>>>>>> master
 # Ignore all .pck files in the public directory
 public/*.pck
+.env

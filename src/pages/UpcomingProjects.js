@@ -4,7 +4,7 @@ import HomeLink from "../components/HomeLink.js";
 
 const UpcomingProjects = () => {
     const projects = [
-        { id: 1, name: "Game Forum", description: "En app om spel för att hitta likasinnade och prata." },
+        { id: 1, name: "Game Forum", description: "Byggt med Razor Pages, ett ställe där man kan göra inlägg, kommentera och skicka privata meddelanden till andra användare" },
         //{ id: 2, name: "Recept", description: "Spara dina favoritrecept" }
     ];
 
