@@ -4,8 +4,9 @@ import HomeLink from "../components/HomeLink.js";
 
 const UpcomingProjects = () => {
     const projects = [
-        { id: 1, name: "Game Forum", description: "Byggt med Razor Pages, ett ställe där man kan göra inlägg, kommentera och skicka privata meddelanden till andra användare" },
-        //{ id: 2, name: "Recept", description: "Spara dina favoritrecept" }
+        { id: 1, name: "Game Forum", presentation: "Skapa ämnen och diskutera. Byggt med Razor Pages", description: "Byggt med Razor Pages och ett RestAPI i bakgrunden är ett ställe där man kan göra inlägg, kommentera och skicka privata meddelanden till andra användare" },
+        { id: 2, name: "QR Scanning", presentation: "Skapa QR-koder", description: "Mer utförlig beskrivning kommer senare" },
+        { id: 3, name: "Playgrounds", presentation: "Hitta till och betygsätt lekplatser", description: "Längre beskrivning kommer."}
     ];
 
     return (
@@ -24,7 +25,7 @@ const UpcomingProjects = () => {
                             <li key={project.id} className="project-item">
                                 <div className="project-content">
                                     <span className="project-name">{project.name}</span>
-                                    <p className="project-description">{project.description}</p>
+                                    <p className="project-description">{project.presentation}</p>
                                     <Link to={`/UpcomingProjects/${project.id}?name=${project.name}&description=${project.description}`} className="project-button">Läs mer</Link>
                                 </div>
                             </li>
