@@ -13,12 +13,12 @@
 .upcoming-projects-headline {
     color: #FFD700; /* Stark gul färg */
     font-size: 2.5rem; /* Större textstorlek */
-    transform: rotate(-1deg); /* Lite rotation för lekfullhet */
-    margin: 2vh 3vw 2vh 2vw;
+    transform: rotate(-3deg); /* Lite rotation för lekfullhet */
+    margin: 2vh 3vw 4vh 2vw;
 }
 
 .upcoming-segment ul {
-    margin: 0;
+    margin: 5vh 0 0 0;
     padding: 0;
 }
 .project-details-background {
@@ -68,7 +68,7 @@
     padding: 0.5rem 1rem; /* Utrymme inne i knappen */
     font-weight: 700; /* Fet stil */
     cursor: pointer; /* Handvisare */
-    transform: rotate(-2deg); /* Lite rotation */
+    transform: rotate(-3deg); /* Lite rotation */
     transition: all 0.3s; /* Mjuka övergångar */
     text-align: center; /* Centrera texten */
 }
@@ -85,6 +85,34 @@
     justify-content: center;
     background-color: #fff;
 }
+
+/* Ny stil för röstknappen */
+.vote-button {
+    background: linear-gradient(132deg, rgb(9,87,106) 0%, rgb(28,108,128) 100%); /* Blå färg */
+    color: #FFD700; /* Textfärg */
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem; /* Utrymme inne i knappen */
+    font-weight: 700; /* Fet stil */
+    cursor: pointer; /* Handvisare */
+    transform: rotate(-2deg); /* Lite rotation */
+    transition: all 0.3s; /* Mjuka övergångar */
+    text-align: center; /* Centrera texten */
+    margin-left: 10px; /* Utrymme mellan knapparna */
+}
+
+.vote-button:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Lägger till skugga vid hover */
+    background-color: #1E90FF; /* Hover färg */
+}
+
+/* Röstningsresultat stil */
+.vote-result {
+    margin-top: 10px;
+    font-size: 1rem; /* Normal storlek */
+    color: #FFFFFF; /* Vit färg */
+}
+
 
 @media (min-width: 768px) {
     .project-item {
